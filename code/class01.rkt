@@ -1,11 +1,15 @@
 #lang racket
 
+(provide (all-defined-out))
+
 (struct Int (value))
 (struct Prim (op arg))
 (struct Read ())
 (struct Add (left right))
 (struct Neg (value))
 
+;;program
+(struct Program (info body))
 
 (define (list-max ls)
   (foldl max 0 ls))
