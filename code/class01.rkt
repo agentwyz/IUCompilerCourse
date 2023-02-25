@@ -8,6 +8,9 @@
 (struct Add (left right))
 (struct Neg (value))
 
+
+;;(struct let (varible value))
+
 ;;program
 (struct Program (info body))
 
@@ -26,7 +29,7 @@
 (define E4 (Prim '+ (list E3 (Int 5))))
 (define E5 (Prim '+ (list E2 (Prim '- (list E2)))))
 
-(hight E1)
+(hight E1) 
 (hight E2)
 (hight E3)
 (hight E4)
