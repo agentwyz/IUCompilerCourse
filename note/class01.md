@@ -27,3 +27,5 @@ R0 ::= (Program '() exp)
 '() is information about language
 
 also we use list-max function to evaluate the hight of exp
+
+`read` is get the input of user 

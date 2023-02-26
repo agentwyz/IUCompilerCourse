@@ -1,1 +1,1 @@
-this repo be used by storing the IUCompilerCourse code 
+this repo is used by storing the IUCompilerCourse code 

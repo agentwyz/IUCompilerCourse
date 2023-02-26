@@ -64,4 +64,36 @@
 ;;rco-atom: exp -> atom x (var x exp)list
 ;;rco-exp: exp -> exp
 
+;;(+ e1 e2)
+;;      (rco-atom e1) ===> atom1 vs1 
+;;      (rco-atom e2) ===> atom2 vs2
+;;      (gensym 'tmp) ===> x3
+;;    (+ e1 e2) ===> x3 ===> (vs1, vs2,(x3 . (+ a1 a2)))
+
+;; we can use a way that the thrth param is boolean type
+
+;;============================================
+;;explicate control
+
+(let ([x (let ([y (-42)])
+           y)])
+  (- x))
+
+;;y = (-42)
+;;x = y_i
+;;return (-x)
+
+
+;;list the local veribles
+;;"info" in programm
+
+
+;;c0 atom ::= int | var
+
+
+
+
+
+
+
 
